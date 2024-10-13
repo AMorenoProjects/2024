@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int calcularMCD(int a,int b){
+   
+   int residuos;
+   
+   while(b != 0){
+      residuos = a % b;
+      a = b;
+      b = residuos;
+   }
+   return a;
+}
+
+int main(){
+   
+   int num1,num2,mcd;
+   
+   cout << "Dame el primer numero: ";
+   cin >> num1;
+   cout << "Dame el segundo numero: ";
+   cin >> num2;
+   
+   mcd = calcularMCD(num1,num2);
+   
+   cout << "El MCD de " << num1 << " y " << num2 << " es: " << mcd;
+   
+   return 0;
+   
+}
