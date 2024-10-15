@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string asignaturas[5];
+    string notas[5];
+    cout << "Por favor ingrese la siguiente información de las asignaturas: \n";
+    for(int i = 0; i < 5; i++){
+        cout << "\n******* Asignatura " << i + 1 <<"********:\n";
+        
+        cout << "Nombre de la asignatura: " ;
+        cin >> asignaturas[i];
+        
+        cout << "\nNota final: ";
+        cin >> notas[i];
+    }
+
+    cout << "Según una encuesta, la asignatura favorita a sido " << asignaturas[2];
+
+   return 0;
+}
