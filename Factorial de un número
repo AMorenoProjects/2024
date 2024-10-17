@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+   
+   int num;
+   unsigned long long factorial = 1; /* Se usa para evitar desvordamiento de numeros grandes */
+   
+   cout << "Por favor, introduzca un numero: "; 
+   cin >> num;
+   cout << "A continuacion se realizara el factorial del numero elegido" << endl;
+
+   if(num < 0){
+      
+      cout << ".....Bit...Bit...Error...";
+      cout << "Se produjo un error, vuelva a intentarlo, no puede introducir un numero negativo";
+      
+   } else {
+      
+      for(int i=1;i <= num;i++){
+         factorial = factorial * i;
+      }
+      
+      cout << "El factorial de '" << num << "' es: " << factorial;
+      
+   }
+   
+   return 0;     
+   }
